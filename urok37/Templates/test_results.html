@@ -1,0 +1,17 @@
+<!-- test_results.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результаты теста</title>
+</head>
+<body>
+    <h1>Результаты теста</h1>
+    <p>Правильных ответов: {{ test_results.right_answers }}</p>
+    <p>Неправильных ответов: {{ test_results.wrong_answers }}</p>
+    {% if test_results.perfect_test %}
+    <p>Поздравляем! Вы прошли тест идеально!</p>
+    {% else %}
+    <p>Попробуйте еще раз!</p>
+    {% endif %}
+</body>
+</html>
